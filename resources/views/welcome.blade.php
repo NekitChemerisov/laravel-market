@@ -1,0 +1,13 @@
+
+@extends('components.startStyle')
+@extends('components.header')
+@extends('components.slider')
+@extends('components.banner')
+@extends('components.arrivals')
+@extends('components.deal_ofthe_week')
+@extends('components.best-sellers')
+@extends('components.benefit')
+@extends('components.blogs')
+@extends('components.newsletter')
+@extends('components.footer')
+@extends('components.endStyle')
