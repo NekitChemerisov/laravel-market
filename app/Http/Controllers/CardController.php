@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Card;
+
 use Illuminate\Http\Request;
 
 class CardController extends Controller
@@ -14,9 +14,8 @@ class CardController extends Controller
      */
     public function index()
     {
-        $card_products = Card::all();
 
-        return view('card.index', compact ('card_products'));
+        return view('card.index');
     }
 
     /**
@@ -29,50 +28,7 @@ class CardController extends Controller
         
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Card  $card
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Card $card)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Card  $card
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Card $card)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Card  $card
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Card $card)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
@@ -80,7 +36,7 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Card $card)
+    public function destroy()
     {
         //
     }

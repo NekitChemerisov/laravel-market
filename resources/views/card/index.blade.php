@@ -14,7 +14,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-                        @foreach ($card_products as $card_product)
+
 						<div class="product-item men">
 							<div class="product discount product_filter">
 								<div class="product_image">
@@ -23,13 +23,12 @@
 								<div class="favorite favorite_left"></div>
 								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
 								<div class="product_info">
-									<h6 class="product_name">{{$card_product['product_id->product_name']}}<a href="single.html"></a></h6>
-									<div class="product_price">{{$card_product['price']}} - 15<span>{{$card_product['price']}}</span></div>
+									<h6 class="product_name">#<a href="single.html"></a></h6>
+									<div class="product_price">#<span>#</span></div>
 								</div>
 							</div>
 							<div class="red_button add_to_cart_button"><a href="#">Оформить заказ</a></div>
 						</div>
-                        @endforeach
 					</div>
 				</div>
 			</div>
